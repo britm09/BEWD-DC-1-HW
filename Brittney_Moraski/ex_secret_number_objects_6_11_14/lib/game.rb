@@ -7,6 +7,10 @@ class Game
 # we'll want to write a few separate methods for unique tasks so that our
 # code is structured properly
 
+def start_game
+# what should happen here?
+end
+
 end
 
 

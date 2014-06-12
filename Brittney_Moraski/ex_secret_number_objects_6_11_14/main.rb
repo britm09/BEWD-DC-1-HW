@@ -56,6 +56,12 @@ puts "Welcome to Secret Number, a game by Brittney Moraski! Are you ready to pla
 puts "What's your name?"
 name = get_input
 
+user = Person.new( name )
+
 # put code here to create a new game, and start it
 
+
+
+game = Game.new( user )
+game.start_game
 
