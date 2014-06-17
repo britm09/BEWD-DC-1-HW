@@ -1,0 +1,27 @@
+<% if @movie.errors.any? %>
+	<% @movie.errors.full_messages.each do |msg| %>
+	<li><%= msg %></li>
+	<% end %>
+<% end %>
+
+<%= form_for @movie do |f| %>
+	<div>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+	<div>
+		<%= f.label :description %>
+		<%= f.text_area :description %>	
+	</div>
+	<div>
+		<%= f.label :year_released %>
+		<%= f.number_field :year_released %>
+	</div>
+	<div>
+		<%= f.label :rating %>
+		<%= f.number_field :rating %>
+	</div>
+		<%= f.submit %>
+<% end %>
+
+<%= link_to "return to home", movies_path(@movie) %>
