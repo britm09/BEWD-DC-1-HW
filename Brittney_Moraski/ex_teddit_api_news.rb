@@ -53,5 +53,8 @@ def get_digg_stories
   end
 end
 
+# this is good, and works! Can you think of a way to combine similar code in each of the get_digg and get_mash
+# methods? 
+
 get_mashable_stories
 get_digg_stories
